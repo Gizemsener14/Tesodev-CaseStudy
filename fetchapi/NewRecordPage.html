@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img class="logo3" src="./image/Logo.PNG">
+        <img class="arrow" src="./image/Arrow1.png" onclick="window.location = 'AddLinkPage.html'">
+        <h1 class="returntolist" onclick="window.location = 'RecordsResultList.html'" >Return To List Page</h1>
+      </header>
+
+    <form class="recordform" name="NewRecordForm" method="get" onsubmit = "return(validate());">
+        <label id="lname" for="fname">Name Surname:</label>
+        <input type="text" id="fname" name="fname" placeholder="Enter name and surname"><br><br>
+        <label id="lcountry" for="fcountry">Country:</label>
+        <input type="text" id="fcountry" name="fcountry" placeholder="Enter a country"><br><br>
+        <label id="lcity" for="fcity">City:</label>
+        <input type="text" id="fcity" name="fcity" placeholder="Enter a city"><br><br>
+        <label id="lmail" for="fmail">Email:</label>
+        <input type="text" id="fmail" name="fmail" placeholder="Enter an e-mail (abc@xyz.com)"><br><br>
+
+
+        <input class="addbutton" type="submit"  value="Add">
+      </form>
+
+      <div class="error-box" id="error-box" >
+        <div class="error-text">Error
+
+        </div>
+      </div>
+</body>
+<script type = "text/javascript">
+  // Form validation code will come here.
+  function validate() {
+    document.getElementById("error-box").innerHTML = " ";
+      
+    //VALIDATE Name
+      if( document.NewRecordForm.fname.value == "" ) {
+        document.getElementById("error-box").innerHTML += "Please write your name!";
+         //alert( "Please write your name!" );
+         return false;
+      }
+      else{
+        var letters = /^[A-Za-z]+$/;
+   if(document.NewRecordForm.fname.value.match(letters))
+     {
+      if(document.NewRecordForm.fname.value.length >= 4 || document.NewRecordForm.fname.value.length <= 60){
+        return true;
+      }
+      else{
+        document.getElementById("error-box").innerHTML += "Name should be with only letters, (min 4 - max 60 character)";
+      }
+      
+     }
+   else
+     {
+      document.getElementById("error-box").innerHTML += "Name should contain only letters";
+     return false;
+     }
+      }
+
+
+      //VALIDATE Country
+      if( document.NewRecordForm.fcountry.value == "" ) {
+        document.getElementById("error-box").innerHTML += "Please provide your Country name!";
+         return false;
+      }
+      else{
+        if(document.NewRecordForm.fcountry.value.length >= 2 || document.NewRecordForm.fcountry.value.length <= 40){
+        return true;
+      }
+      else{
+        document.getElementById("error-box").innerHTML += "Country should be with only letters, (min 2 - max 40 character)";
+      }
+
+      }
+
+      //VALIDATE City
+      if( document.NewRecordForm.fcity.value == "" ) {
+        document.getElementById("error-box").innerHTML +="Please provide your City name!";
+         return false;
+      }
+      else{
+        if(document.NewRecordForm.fcity.value.length >= 2 || document.NewRecordForm.fcity.value.length <= 40){
+        return true;
+      }
+      else{
+        document.getElementById("error-box").innerHTML += "City should be with only letters, (min 2 - max 40 character)";
+      }
+
+      }
+
+      //VALIDATE E-mail
+      var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+      
+      if (document.NewRecordForm.fmail.value.match(validRegex)) {
+        
+        document.getElementById("error-box").innerHTML += "Valid email address!";
+           
+               return true;
+               
+                 } else {
+                  
+                  document.getElementById("error-box").innerHTML +="Invalid email address!";
+                      
+                          return false;
+                          
+                            }
+
+
+
+      return( true );
+   }
+</script>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        
+        <button type="button"  class="add-record-button" onclick="window.location = 'NewRecordPage.html'" >Add New Record</button>
+
+
+
+    <div class="group19">
+        <img class="logo" src="./image/Logo.PNG">
+        <p class="search-app-text">Search App</p>
+    </div>
+
+    <div class="navbartitle">
+        <p class="navbar-LargeTitle">Find in records</p>
+        <p class="empty"></p>
+    </div>
+    
+
+
+
+<div class="container">
+    <div class="wrapper">
+      <input type="text" name="search" id="search" placeholder="Type to search" autocomplete="chrome-off">
+      <button><img src="./image/search.png"></img></button>
+      <div class="results">
+        <ul>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="buttongroup">
+    <button type="submit" class="search-button" id="result-list-button" >Search</button>
+</div>
+
+
+
+    <div class="group23">
+
+    </div>
+
+
+<p class="newsbar-title">Top News</p>
+    <section class="news-bar">
+		<div class="container-fluid">
+			<div class="slider-wrap">
+				<div class="slider-main" id="slider-main">
+                    
+					<div class="news-item" >
+						<div class="text">1-A Plan to Rebuild the Bus Terminal Everyone Loves to Hate</div>
+                        <div class="alt-text">1h ago · by Troy Corlson</div>
+					</div>
+					<div class="news-item">
+						<div class="text">2-A Plan to Rebuild the Bus Terminal Everyone Loves to Hate</div>
+                        <div class="alt-text">1h ago · by Troy Corlson</div>
+					</div>
+					<div class="news-item">
+						<div class="text">3-A Plan to Rebuild the Bus Terminal Everyone Loves to Hate</div>
+                        <div class="alt-text">1h ago · by Troy Corlson</div>
+					</div>
+					<div class="news-item">
+						<div class="text">4-A Plan to Rebuild the Bus Terminal Everyone Loves to Hate</div>
+                        <div class="alt-text">1h ago · by Troy Corlson</div>
+					</div>
+					<div class="news-item">
+						<div class="text">5-A Plan to Rebuild the Bus Terminal Everyone Loves to Hate</div>
+                        <div class="alt-text">1h ago · by Troy Corlson</div>
+					</div>
+					<div class="news-item">
+						<div class="text">6-A Plan to Rebuild the Bus Terminal Everyone Loves to Hate</div>
+                        <div class="alt-text">1h ago · by Troy Corlson</div>
+					</div>
+				</div>
+                <div class="left-btnn">
+                    <button class="left-btn" onclick="prev()"><img class="imgl" src="./image/leftarrow.png"></button>
+                </div>
+                <div class="right-btnn">
+                    <button class="right-btn" onclick="next()"><img class="imgr" src="./image/rightarrow.png"></button>
+                </div>
+                
+				
+			</div>
+		</div>
+	</section>
+
+
+        <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4></h4>
+                    <img src="./image/image 1.png">
+                </div>
+                <div class="footer-col">
+                    <h4></h4>
+                    <ul>
+                        <p>İletişim</p>
+                        <p>Adres: Çifte Havuzlar Mah. Eski Londra Asfaltı Cad. Kuluçka Merkezi D2 Blok No: 151/1F İç Kapı No: 2B03 Esenler/İstanbul</p>
+                        <p>Email: bilgi@tesodev.com</p>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4></h4>
+                    <ul>
+                        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12040.966363246675!2d28.876391851919582!3d41.01997015403607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cabb7abf29ba35%3A0xc98f44e9057adcde!2zVGVzb2RldiBZYXrEsWzEsW0gRG9uYW7EsW0gQmlsacWfaW0gQml5b21lZGlrYWwgS29uZ3JlIFR1cml6bSBFxJ9pdGltIERhbsSxxZ9tYW5sxLFrIExpbWl0ZWQgxZ5pcmtldGk!5e0!3m2!1str!2str!4v1662662614879!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+   </footer>
+
+
+
+    
+
+<script src="./main.js"></script>
+<script>
+
+    //news bar'da haberlerin caarousel mantığında hareket etmesi için append kullandım.
+    //Haberler bir array'de push olduğu gibi eklenmekte
+    var sliderMain = document.getElementById("slider-main");
+    var item = sliderMain.getElementsByClassName("news-item");
+
+function next(){
+	sliderMain.append(item[0]);
+}
+
+//previous işleminde haberlerdeki ilk haberin indexinden bir geriye gider
+function prev(){
+	sliderMain.prepend(item[item.length - 1]);
+}
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+.logo{
+    position: absolute;
+width: 149px;
+height: 63px;
+left: 37px;
+top: 27px;
+
+background: url(jpg.jpg);
+}
+.search-button{
+    position: absolute;
+width: 138px;
+height: 46px;
+left: 754px;
+top: 32px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 21px;
+
+color: #FFFFFF;
+
+background: #204080;
+border-radius: 12px;
+
+}
+.search-button:hover{
+    background: #4F75C2;
+border-radius: 12px;
+}
+.addbutton{
+    position: absolute;
+width: 216px;
+height: 46px;
+left: 995px;
+top: 32px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 21px;
+
+color: #FFFFFF;
+
+
+background: #204080;
+border-radius: 12px;
+}
+.addbutton:hover{
+    background: #4F75C2;
+border-radius: 12px;
+}
+#search{
+    box-sizing: border-box;
+
+position: absolute;
+width: 509px;
+height: 46px;
+left: 221px;
+top: 35px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 21px;
+
+color: #484848;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+border-radius: 8px;
+}
+#search:hover{
+    background: rgba(100, 100, 100, 0.08);
+border: 2px solid rgba(72, 72, 72, 0.6);
+border-radius: 8px;
+}
+.orderimg{
+    position: absolute;
+width: 26px;
+height: 24px;
+left: 938.74px;
+top: 128.48px;
+
+}
+.orderbutton{
+    box-sizing: border-box;
+
+position: absolute;
+width: 126.28px;
+height: 29.5px;
+left: 930px;
+top: 127.23px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+
+color: #484848;
+
+background: #F3F2F2;
+border: 1px solid #414141;
+border-radius: 8px;
+}
+
+
+.resultlist {
+    padding: 0px;
+  }
+  
+  .resultlist ul {margin: 0; padding: 0; }
+  .resultlist ul li {
+    position: absolute;
+height: 78.86px;
+left: 186px;
+right: 367.86px;
+
+
+background: #FFFFFF;
+border-radius: 8px;
+  }
+  
+  .show .resultlist ul li {
+    opacity: 1;
+    
+  }
+  
+  .show .resultlist {
+    padding: 10px;
+  }
+  
+  .resultlist ul li:hover {
+    background: #ececec
+  }
+  .result-container{
+    position: absolute;
+    width: 726.14px;
+    height: 505.99px;
+    left: 186px;
+    top: 162.14px;
+  }

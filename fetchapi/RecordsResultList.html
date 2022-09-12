@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body onload="onloadevent()">
+    <img class="logo" src="./image/Logo.PNG">
+
+    <div class="group14">
+        <form action="" class="search-bar">
+            <button class="addbutton" type="button" onclick="window.location = 'NewRecordPage.html'">Add New Record</button>
+            <input
+            onkeyup="myFunction()"
+        type="text"
+        id="search"
+        class="form-control form-control-lg"
+        placeholder="Search for..."
+        data search />
+        <button type="submit" class="search-button">Search</button>
+        </form>
+
+    </div>
+
+    <div>
+        <button class="orderbutton" onclick="OrderOptions()" >Order By</button>
+        <img class="orderimg" onclick="OrderOptions()" src="./image/orderby.png">
+    </div>
+    <div id="orderbyicon" class="orders">
+        
+    </div>
+    <div class="result-container">
+        <div class="resultlist">
+            <p>RESULT LIST</p>
+            <ul></ul>
+            
+          </div>
+    </div>
+
+
+    <script src="./main.js"></script> 
+  
+</body>
+</html>
