@@ -1,6 +1,7 @@
 # CaseStudyProject
  search engine application
- ![main page image1](https://user-images.githubusercontent.com/96765916/189633690-8d835496-8e8f-4108-ad4e-17689c17a7c2.PNG)
+![main page image 3](https://user-images.githubusercontent.com/96765916/189650887-b70cac40-7002-4cbe-a1af-3b24c9574cdd.PNG)
+
 ![RecordResultsList page screen](https://user-images.githubusercontent.com/96765916/189633813-25797bbb-8c35-4eb0-bf35-2eb045d59fb3.PNG)
 ![Ekran Alıntısı](https://user-images.githubusercontent.com/96765916/189634857-5e78a38d-3194-420b-886b-35cad87303e7.PNG)
 
