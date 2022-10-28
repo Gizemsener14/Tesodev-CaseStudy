@@ -9,7 +9,4 @@
 
 ![AddNewRecord page screen](https://user-images.githubusercontent.com/96765916/189633558-99b6a9ee-dc58-49a5-a2b6-3479919fbc95.PNG)![main page image 3](https://user-images.githubusercontent.com/96765916/189633607-52fd3e9c-82d5-45d1-adbd-d4d66d80b21f.PNG)
 
--Ekran görüntüleri yüklenmiştir.
--Json file'a erişirken cors uyarısı almamak için json:server kullandım.
--Main sayfasında search bar arama işlemini gerçekleştirmekte fakat verileri arama sonuçları sayfasına aktarmada hata aldığım için sonuçlar gözükmemektedir.
--Add New Record sayfasınd da form'dan alınan veriler başarılı bir şekilde validation işleminden geçmektedir.Json dosyasına kayıt etmede hata aldığım için kayıt etmiyor.
+
